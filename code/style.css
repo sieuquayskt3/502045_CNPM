@@ -1,0 +1,9 @@
+.margin-nav {
+    margin-top: 60px
+}
+
+.logo {
+    width: 76px;
+    height: 40px;
+    background-image: url('images/logo.png');
+}
