@@ -7,3 +7,7 @@
     height: 40px;
     background-image: url('images/logo.png');
 }
+
+.inputQuantity {
+    width: 30px;
+}
