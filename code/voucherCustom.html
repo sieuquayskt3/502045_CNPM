@@ -18,6 +18,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
 	
 	<title>Thêm sản phẩm</title>
 </head>
@@ -80,9 +81,15 @@
 							
 						<div class="form-group">
 							<label for="number">Số voucher muốn thêm</label>
-							<input name="number" class="form-control w-25" type="number" min="0" id="number">
-							<i class="fas fa-plus-circle p-2"></i>
+							<div>
+								<input name="number" class="w-25" type="number" min="0" id="number">
+								<i class="fas fa-plus-circle p-2 ml-2 btn-outline-dark" onclick="createVoucher()" data-toggle="tooltip" data-placement="bottom" title="Tạo voucher"></i>
+							</div>
 						</div>
+						<ul id="voucherList">
+							<li>lklkokgj</li>
+							<li>d5d1f455</li>
+						</ul>
 						
 	
 						<div class="form-group text-center">
