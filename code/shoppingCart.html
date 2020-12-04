@@ -80,9 +80,11 @@
 					<div class="col-lg-8 col-md-6 d-flex align-items-center justify-content-center">
 						<h4 class="mr-4">300.000đ</h4>
 						<!-- số lượng -->
-						<i class="fas fa-minus btn-dark p-1"></i>
-						<input type="text" value="1" class="inputQuantity mx-1">
-						<i class="fas fa-plus btn-dark p-1"></i>
+						<div class="d-flex">
+							<h5>Số lượng:&nbsp;</h5>
+							<input type="number" value="1" onvolumechange="updatePrice(idVoucher)" class="inputQuantity mx-1">
+						</div>
+						
 					</div>
 				</div>
 				<!-- sản phẩm 2 -->
@@ -99,9 +101,10 @@
 					<div class="col-lg-8 col-md-6 d-flex align-items-center justify-content-center">
 						<h4 class="mr-4">300.000đ</h4>
 						<!-- số lượng -->
-						<i class="fas fa-minus btn-dark p-1"></i>
-						<input type="text" value="1" class="inputQuantity mx-1">
-						<i class="fas fa-plus btn-dark p-1"></i>
+						<div class="d-flex">
+							<h5>Số lượng:&nbsp;</h5>
+							<input type="number" min="0" value="1" onvolumechange="updatePrice(idVoucher)" class="inputQuantity mx-1">
+						</div>
 					</div>
 				</div>
 			</div>

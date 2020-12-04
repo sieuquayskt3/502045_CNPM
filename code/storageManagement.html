@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/favicon-16x16.png">
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kho hàng</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<div class=" navbar-brand">
+				<!-- Logo -->
+				<form action="home.html">
+					<button class="logo btn-light border-0" type="submit">
+				</form>
+			</div>
+			<div class="bg-dark">
+
+                <a href="logout.php">
+                    <button class="btn-light border-0 p-2 px-3 ml-2" data-toggle="tooltip" data-placement="bottom" title="Đăng xuất">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </a>
+			</div>
+		</div>
+	</nav> <!-- End nav -->
+
+	<div class="container margin-nav mb-3">
+		<div class="row mb-2">
+			<div class="col-12 d-flex">
+                <h4 class="mr-auto">Quản lý kho hàng</h4>
+                <a href="voucherManagement.html" class="mr-3"><h4>Quản lý voucher</h4></a>
+                <a href="voucherCustom.html">
+                    <button class="border border-dark p-2 px-3 ml-2" data-toggle="tooltip" data-placement="bottom" title="Thêm sản phẩm mới">
+                        <i class="fas fa-plus-square"></i>
+                    </button>
+                </a>
+			</div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr class="text-center">
+                            <th scope="col" rowspan="2">Mã sản phẩm</th>
+                            <th scope="col" rowspan="2">Tên sản phẩm</th>
+                            <th scope="col" rowspan="2">Loại sản phẩm</th>
+                            <th scope="col" colspan="2">Nhập hàng</th>
+                            <th scope="col" colspan="2">Xuất hàng</th>
+                            <th scope="col" rowspan="2">Tồn kho</th>
+                            <th scope="col" rowspan="2">Doanh thu (đồng)</th>
+                         </tr>
+                        <tr class="text-center">
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Đơn giá (đồng)</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Đơn giá (đồng)</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                        <!-- đơn hàng 1 -->
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Phiếu mua hàng 300.000đ</td>
+                            <td>Ẩm thực</td>
+                            <td>7</td>
+                            <td>250.000</td>
+                            <td>5</td>
+                            <td>280.000</td>
+                            <td>2</td>
+                            <td>150.000</td>
+                        </tr>
+                        <!-- đơn hàng 2 -->
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Phiếu giảm giá 100.000đ</td>
+                            <td>Ẩm thực</td>
+                            <td>10</td>
+                            <td>60.000</td>
+                            <td>6</td>
+                            <td>80.000</td>
+                            <td>4</td>
+                            <td>240.000</td>
+                        </tr>
+                    </tbody>
+
+                    <!-- Tổng -->
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="3">Tổng: </th>
+                            <th scope="col" colspan="2">17</th>
+                            <th scope="col" colspan="2">11</th>
+                            <th scope="col">6</th>
+                            <th scope="col">390.000</th>
+                         </tr>
+                    </thead>
+                  </table>
+            </div>
+        </div>
+	</div>
+</body>
+</html>

@@ -32,7 +32,7 @@
 			<div class="bg-dark">
 				<div class="flex d-inline-flex">
 					<form method="POST" action="search.php" class="flex d-inline-flex mr-5">
-						<input type="text" placeholder="Tìm voucher...">
+						<input type="text" placeholder="Tìm sản phẩm...">
 						<button class="btn-light border-0" type="submit">
 							<i class="fas fa-search"></i>
 						</button>
@@ -64,7 +64,7 @@
 				
             </div>
             <div class="col-lg-8 col-md-6">
-                <div class="titleVoucher">
+                <div class="titlesản phẩm">
                     <p>Buffet Trưa hải sản tôm hùm</p>
                     
                     <p class="font-weight-bold">300.000đ</p>
@@ -92,9 +92,10 @@
                 
                 <div class="mb-2">
                     <!-- số lượng -->
-                    <i class="fas fa-minus btn-dark p-1"></i>
-                    <input type="text" value="1" class="inputQuantity mx-1">
-                    <i class="fas fa-plus btn-dark p-1"></i>
+                    <div class="d-flex">
+                        <h5>Số lượng:&nbsp;</h5>
+                        <input type="number" min="0" value="1" onvolumechange="updatePrice(idVoucher)" class="inputQuantity mx-1">
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-dark w-50">Thêm vào giỏ hàng</button>
             </div>
