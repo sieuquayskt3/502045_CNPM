@@ -20,9 +20,8 @@
     $pass = '';
     $pass_confirm = '';
     $phone = '';
-    $address = '';
-
-    if (isset($_POST['name']) && isset($_POST['address']) && isset($_POST['email']) && isset($_POST['phone'])
+    
+    if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['phone'])
     && isset($_POST['user']) && isset($_POST['pass']) && isset($_POST['pass-confirm']))
     {
         $name = $_POST['name'];
@@ -31,7 +30,6 @@
         $pass = $_POST['pass'];
         $pass_confirm = $_POST['pass-confirm'];
         $phone = $_POST['phone'];
-        $address = $_POST['address'];
 
         if (empty($name)) {
             $error = 'Vui lòng nhập họ và tên';
@@ -48,9 +46,6 @@
         }
         else if (empty($pass)) {
             $error = 'Vui lòng nhập mật khẩu';
-        }
-        else if (empty($address)) {
-            $error = 'Vui lòng nhập địa chỉ giao hàng';
         }
         else if (strlen($pass) < 6) {
             $error = 'Mật khẩu ít nhất 6 ký tự';
@@ -87,11 +82,6 @@
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input value="<?= $email?>" name="email" class="form-control" type="email" id="email">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="address">Địa chỉ giao hàng</label>
-                        <input value="<?=$address?>" name="address" class="form-control" type="text" id="address">
                     </div>
                     <div class="form-group">
                         <label for="user">Tên đăng nhập</label>

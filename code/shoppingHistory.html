@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<script src="main.js"></script>
-    <title>Giỏ hàng</title>
+    <title>Lịch sử mua hàng</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -60,69 +60,43 @@
 	<div class="container margin-nav mb-3">
 		<div class="row">
 			<div class="col-12">
-				<h4>Giỏ hàng</h4>
+				<h4>Đơn hàng của tôi</h4>
 			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-9">
-				<!-- sản phẩm 1 -->
-				<div class="row mb-3">
-					<div class="col-lg-4 col-md-6">
-						<div class="card">
-							<img src="http://placehold.it/700x400" class="card-img-top" alt="...">
-							<div class="card-body">
-								<p> Buffet Trưa hải sản tôm hùm </p>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-lg-8 col-md-6 d-flex align-items-center justify-content-center">
-						<h4 class="mr-4">300.000đ</h4>
-						<!-- số lượng -->
-						<i class="fas fa-minus btn-dark p-1"></i>
-						<input type="text" value="1" class="inputQuantity mx-1">
-						<i class="fas fa-plus btn-dark p-1"></i>
-					</div>
-				</div>
-				<!-- sản phẩm 2 -->
-				<div class="row mb-3">
-					<div class="col-lg-4 col-md-6">
-						<div class="card">
-							<img src="http://placehold.it/700x400" class="card-img-top" alt="...">
-							<div class="card-body">
-								<p> Buffet Trưa hải sản tôm hùm </p>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-lg-8 col-md-6 d-flex align-items-center justify-content-center">
-						<h4 class="mr-4">300.000đ</h4>
-						<!-- số lượng -->
-						<i class="fas fa-minus btn-dark p-1"></i>
-						<input type="text" value="1" class="inputQuantity mx-1">
-						<i class="fas fa-plus btn-dark p-1"></i>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<form action="" method="post">
-					<h5>Địa chỉ nhận hàng</h5>
-					<div class="d-flex d-row">
-						<p class="font-weight-bold">Thanh Bình</p>
-						<p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
-						<p class="font-weight-bold">0123456789</p>
-					</div>
-					<i>19 Đ.Nguyễn Hữu Thọ, Tân Hưng, Quận 7, Thành phố Hồ Chí Minh</i>
-					<div class="d-flex d-row mt-3">
-						<p>Tổng cộng:&nbsp;</p>
-						<h5>300.000đ</h5>
-					</div>
-					
-					<button type="submit" class="btn btn-dark w-100">Thanh toán</button>
-				</form>
-			</div>
-		</div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Mã hóa đơn</th>
+                            <th scope="col">Ngày mua</th>
+                            <th scope="col">Sản phẩm</th>
+                            <th scope="col">Tổng tiền</th>
+                            <th scope="col">Trạng thái</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                        <!-- đơn hàng 1 -->
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>12/12/2020</td>
+                            <td>Phiếu mua hàng 200.000đ</td>
+                            <td>180.000đ</td>
+                            <td>Đã mua hàng</td>
+                        </tr>
+                        <!-- đơn hàng 2 -->
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>11/11/2020</td>
+                            <td>Tour du dịch Trái Đất</td>
+                            <td>100.000.000đ</td>
+                            <td>Đã hủy</td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
 	</div>
 		
 	<div class="bg-dark p-2">
