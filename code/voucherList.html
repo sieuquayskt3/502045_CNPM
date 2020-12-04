@@ -1,26 +1,27 @@
-!<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon -->
 	<link rel="icon" 
-    type="image/png" 
-    href="images/favicon-16x16.png">
+      type="image/png" 
+      href="images/favicon-16x16.png">
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+			integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="style.css">
-	<script src="main.js"></script>
-    <title>Danh sách sản phẩm</title>
-</head>
-<body>
+	
+	<title>Danh sách sản phẩm</title>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<div class="container">
 			<div class=" navbar-brand">
@@ -57,12 +58,55 @@
 		</div>
 	</nav> <!-- End nav -->
 
-	<div class="container margin-nav mb-3">
+	<div class="container margin-nav">
 		<div class="row">
-            
-        </div>
+			<div class="col-sm-3">
+				<h1 class="my-4">Voucher Shop</h1>
+				<ul class="list-group">
+					<li class="list-group-item"><a href="#">Ẩm thực</a></li>
+					<li class="list-group-item"><a href="#">Khách sạn</a></li>
+					<li class="list-group-item"><a href="#">Du lịch</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-9 voucherList">
+                <!-- <h4> echo $title </h4> -->
+				<h4>Kết quả tìm kiếm/ ẩm thực/ khách sạn/ Du lịch</h4>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="card">
+							<img src="http://placehold.it/700x400" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p> Buffet Trưa hải sản tôm hùm </p>
+								<h6 class="font-weight-bold">500.000đ</h6>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="card">
+							<img src="http://placehold.it/700x400" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p> Tour làng nổi Tân Lập </p>
+								<h6 class="font-weight-bold">240.000đ</h6>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="card">
+							<img src="http://placehold.it/700x400" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p> Phiếu quà tặng 300.000đ </p>
+								<h6 class="font-weight-bold">250.000đ</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-		
+
+	<!-- footer -->
 	<div class="bg-dark p-2">
 		<div class="container">
 			<div class="text-center text-white">Copyright &copy; 2020</div>
