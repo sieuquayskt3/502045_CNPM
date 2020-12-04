@@ -26,30 +26,37 @@
 		<div class="container">
 			<div class=" navbar-brand">
 				<!-- Logo -->
-				<button class="logo btn-light border-0">
+				<form action="home.html">
+					<button class="logo btn-light border-0" type="submit">
+				</form>
 			</div>
 			<div class="bg-dark">
 				<div class="flex d-inline-flex">
-					<form method="POST" action="voucherList.html" class="flex d-inline-flex">
+					<form method="POST" action="search.php" class="flex d-inline-flex mr-5">
 						<input type="text" placeholder="Tìm voucher...">
 						<button class="btn-light border-0" type="submit">
 							<i class="fas fa-search"></i>
 						</button>
-					</form>
+                    </form>
+                    <a href="shoppingHistory.html">
+						<button class="btn-light border-0 py-2 px-4" data-toggle="tooltip" data-placement="bottom" title="Lịch sử mua hàng">
+							<i class="fas fa-list-ul"></i>
+						</button>
+					</a>
 					<a href="shoppingCart.html">
-						<button class="btn-light border-0 py-2 px-4 ml-5">
+						<button class="btn-light border-0 py-2 px-4 ml-2" data-toggle="tooltip" data-placement="bottom" title="Giỏ hàng">
 							<i class="fas fa-shopping-cart"></i>
 						</button>
 					</a>
 					<a href="logout.php">
-						<button class="btn-light border-0 p-2 px-3 ml-2">
+						<button class="btn-light border-0 p-2 px-3 ml-2" data-toggle="tooltip" data-placement="bottom" title="Đăng xuất">
 							<i class="fas fa-sign-out-alt"></i>
 						</button>
 					</a>
 				</div>
 			</div>
 		</div>
-	</nav>
+	</nav> <!-- End nav -->
 
 	<div class="container margin-nav">
 		<div class="row">

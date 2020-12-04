@@ -1,0 +1,107 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+	<link rel="icon" 
+    type="image/png" 
+    href="images/favicon-16x16.png">
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+    <title>Giỏ hàng</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<div class=" navbar-brand">
+				<!-- Logo -->
+				<form action="home.html">
+					<button class="logo btn-light border-0" type="submit">
+				</form>
+			</div>
+			<div class="bg-dark">
+				<div class="flex d-inline-flex">
+					<form method="POST" action="search.php" class="flex d-inline-flex mr-5">
+						<input type="text" placeholder="Tìm voucher...">
+						<button class="btn-light border-0" type="submit">
+							<i class="fas fa-search"></i>
+						</button>
+                    </form>
+                    <a href="shoppingHistory.html">
+						<button class="btn-light border-0 py-2 px-4" data-toggle="tooltip" data-placement="bottom" title="Lịch sử mua hàng">
+							<i class="fas fa-list-ul"></i>
+						</button>
+					</a>
+					<a href="shoppingCart.html">
+						<button class="btn-light border-0 py-2 px-4 ml-2" data-toggle="tooltip" data-placement="bottom" title="Giỏ hàng">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</a>
+					<a href="logout.php">
+						<button class="btn-light border-0 p-2 px-3 ml-2" data-toggle="tooltip" data-placement="bottom" title="Đăng xuất">
+							<i class="fas fa-sign-out-alt"></i>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav> <!-- End nav -->
+
+	<div class="container margin-nav mb-3">
+		<div class="row">
+            <div class="col-lg-4 col-md-6">
+                <img src="http://placehold.it/700x400" class="card-img-top" alt="...">
+				
+            </div>
+            <div class="col-lg-8 col-md-6">
+                <div class="titleVoucher">
+                    <p>Buffet Trưa hải sản tôm hùm</p>
+                    
+                    <p class="font-weight-bold">300.000đ</p>
+                </div>
+                <div class="contentVoucher">
+                    <h5>Mô tả sản phẩm</h5>
+                    <p>Là một trong những địa chỉ buffet hàng đầu tại Sài Gòn, 
+                        Nhà hàng Mermaid thuộc La Vela Saigon Hotel 5* luôn là 
+                        sự lựa chọn đáng tin cậy của đông đảo người yêu ẩm thực. 
+                        Chất lượng luôn được thể hiện qua thực đơn buffet vô cùng phong phú, 
+                        thường xuyên được thay đổi, món ăn có hương vị hấp dẫn, 
+                        cùng cách trình bày không kém phần công phu, tỉ mỉ. Lần này, 
+                        mời bạn cùng đến với Mermaid Restaurant, thưởng thức ngay tiệc 
+                        Buffet trưa hải sản tôm hùm, cua, ghẹ, 8 loại ốc và 100 món 
+                        3 miền đặc sắc, miễn phí nước uống, tráng miệng. Cơ hội trải 
+                        nghiệm nghệ thuật ẩm thực đỉnh cao 
+                        trong một không gian vô cùng sang trọng và đẳng cấp đang chờ đợi bạn!
+                        <br>
+                        Địa chỉ quá tại: Q7, TP HCM
+                    </p>
+                </div>
+                
+                <div class="mb-2">
+                    <!-- số lượng -->
+                    <i class="fas fa-minus btn-dark p-1"></i>
+                    <input type="text" value="1" class="inputQuantity mx-1">
+                    <i class="fas fa-plus btn-dark p-1"></i>
+                </div>
+                <button type="submit" class="btn btn-dark w-50">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+	</div>
+		
+	<div class="bg-dark p-2">
+		<div class="container">
+			<div class="text-center text-white">Copyright &copy; 2020</div>
+		</div>
+	<div>
+</body>
+</html>
